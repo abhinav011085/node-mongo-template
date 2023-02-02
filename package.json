@@ -2,9 +2,10 @@
   "name": "flyy-ri-app",
   "version": "1.0.0",
   "description": "Flyy Retailer Incentive App",
-  "main": "ri_server.js",
+  "main": "ri-server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ri-server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/roid-software/flyy-ri-app/issues"
   },
-  "homepage": "https://github.com/roid-software/flyy-ri-app#readme"
+  "homepage": "https://github.com/roid-software/flyy-ri-app#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongodb": "^5.0.0",
+    "mongoose": "^6.9.0"
+  }
 }
