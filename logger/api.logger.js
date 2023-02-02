@@ -13,7 +13,7 @@ class APILogger {
     }
 
     error(message) {
-        logger.error(message);
+        console.log(message);
     }
 }
 

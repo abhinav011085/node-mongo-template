@@ -13,6 +13,11 @@ class TaskRepository {
         return tasks;
     }
 
+    async getTask(id) {
+        const task = await Task.findOne({_id: id});
+        return task;
+    }
+
     async createTask(task) {
         let data = {};
         try {
@@ -24,10 +29,11 @@ class TaskRepository {
         return data;
     }
 
-    async updateTask(task) {
+    async updateTask(id, task) {
         let data = {};
         try {
-            data = await Task.updateOne(task);
+            let filter = {_id: id}
+            data = await Task.findOneAndUpdate(filter, task, {new: true});      //added new: true so that it would return the updated object instead of the old one
         } catch(err) {
             logger.info('Error::' + err);
             data = err;

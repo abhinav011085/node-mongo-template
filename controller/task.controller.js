@@ -7,12 +7,16 @@ class TodoController {
         return await taskService.getTasks();
     }
 
+    async getTask(id) {
+        return await taskService.getTask(id);
+    }
+
     async createTask(task) {
         return await taskService.createTask(task);
     }
 
-    async updateTask(task) {
-        return await taskService.updateTask(task);
+    async updateTask(id, task) {
+        return await taskService.updateTask(id, task);
     }
 
     async deleteTask(taskId) {

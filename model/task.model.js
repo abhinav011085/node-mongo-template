@@ -23,7 +23,7 @@ taskSchema.pre('save', function(error, doc, next) {
     }
 });
 
-const Task = mongoose.model('tasks', taskSchema);
+const Task = mongoose.model('todos', taskSchema);
 
 module.exports = {
     Task
