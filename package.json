@@ -1,0 +1,19 @@
+{
+  "name": "flyy-ri-app",
+  "version": "1.0.0",
+  "description": "Flyy Retailer Incentive App",
+  "main": "ri_server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/roid-software/flyy-ri-app.git"
+  },
+  "author": "Flyy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roid-software/flyy-ri-app/issues"
+  },
+  "homepage": "https://github.com/roid-software/flyy-ri-app#readme"
+}
