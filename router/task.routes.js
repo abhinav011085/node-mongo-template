@@ -2,8 +2,6 @@ const express = require('express');
 const router = express.Router();
 const taskController = require('../controller/task.controller')
 
-router.use(express.json());
-
 router.get('/api/tasks', (req, res) => {
     taskController.getTasks().then(data => res.json(data));
 });
